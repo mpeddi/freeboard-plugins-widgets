@@ -1,0 +1,18 @@
+.gridster .gs_w {
+    background-color: #000000;
+}
+.gridster header {
+    background-color: #000000;
+}
+body {
+    background-color: #000000;
+}
+.sub-section {
+    border-bottom: none;
+}
+#clone-action{
+        display: none !important;
+        }
+#share-action{
+        display: none !important;
+        }
