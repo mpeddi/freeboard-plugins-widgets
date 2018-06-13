@@ -30,7 +30,7 @@
 
 		function getToken(){
 			$.ajax({
-				url: `https://cors-anywhere.herokuapp.com/https://accounts.automatic.com/oauth/access_token`,
+				url: `https://accounts.automatic.com/oauth/access_token`,
 				type:"POST",
 				data: {
 					"client_id": "561011688577bac49576",
