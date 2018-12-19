@@ -8,7 +8,7 @@
         name: "verified_automatic_code",
         display_name: "Automatic Code",
         type: "text",
-        description: "After getting redirected from <a href="+"https://accounts.automatic.com/oauth/authorize/?client_id=561011688577bac49576&response_type=code&scope=scope:trip%20scope:behavior%20scope:user:profile%20scope:location%20scope:vehicle:events"+" target='_blank'>here</a> copy the text after 'code='.",
+        description: "After getting redirected from <a href="+"https://accounts.automatic.com/oauth/authorize/?client_id=xxxxxxxxxxxx&response_type=code&scope=scope:trip%20scope:behavior%20scope:user:profile%20scope:location%20scope:vehicle:events"+" target='_blank'>here</a> copy the text after 'code='.",
       },
       {
         name: "refresh",
@@ -33,8 +33,8 @@
 				url: `https://accounts.automatic.com/oauth/access_token`,
 				type:"POST",
 				data: {
-					"client_id": "561011688577bac49576",
-					"client_secret": "8b5b651f944a7bc274fa193d40b3a7a8810cfed3",
+					"client_id": "xxxxxxxxxxxx",
+					"client_secret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
 					"code": currentSettings.verified_automatic_code,
 					"grant_type": "authorization_code"
 				},
@@ -52,8 +52,8 @@
 				url: `https://accounts.automatic.com/oauth/access_token`,
 				type:"POST",
 				data: {
-					"client_id": "561011688577bac49576",
-					"client_secret": "8b5b651f944a7bc274fa193d40b3a7a8810cfed3",
+					"client_id": "xxxxxxxxxxxxxxxxxx",
+					"client_secret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
 					"refresh_token": currentSettings.refresh_token,
 					"grant_type": "refresh_token"
 				},
